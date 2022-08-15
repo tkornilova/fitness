@@ -509,3 +509,120 @@ a {
   text-decoration: none;
   color: #102654;
 }
+
+.header {
+  width: 100%;
+  min-width: 320px;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.header__wrapper {
+  min-width: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  gap: 10px 20px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.header__wrapper svg {
+  cursor: initial;
+}
+
+.header__wrapper div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.header__wrapper a {
+  font-family: "Bebas Neue";
+  font-size: 26px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  color: white;
+  margin: 0;
+}
+
+.header__wrapper div a:hover,
+.header__wrapper div a:focus,
+.header__wrapper div a:active {
+  border-bottom: 2px solid white;
+}
+
+@media (min-width: 1200px) {
+  .header__wrapper {
+    max-width: 1200px;
+    padding: 28px 23px 30px 18px;
+  }
+
+  .header__wrapper svg {
+    width: 89px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .header__wrapper {
+    max-width: 1199px;
+    padding: 39px 45px 33px 43px;
+  }
+
+  .header__wrapper svg {
+    width: 82px;
+    height: 17px;
+  }
+
+  .header__wrapper a {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header__wrapper {
+    max-width: 767px;
+    padding: 19px 16px 16px 14px;
+  }
+
+  .header__wrapper svg {
+    width: 68px;
+    height: 15px;
+  }
+
+  .header__wrapper a {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

@@ -7,6 +7,7 @@
   left: 0;
   right: 0;
   margin: 0 auto;
+  z-index: 10;
 }
 
 .header__wrapper {
@@ -22,7 +23,7 @@
 
   @media (min-width: $desktop-width) {
     max-width: 1200px;
-    padding: 28px 23px 30px 18px;
+    padding: 30px 23px 30px 18px;
   }
 
   @media (max-width: $tablet-width-only) {
@@ -38,6 +39,7 @@
 
 .header__wrapper svg {
   cursor: initial;
+  fill: $white;
 
   @media (min-width: $desktop-width) {
     width: 89px;
@@ -46,7 +48,7 @@
 
   @media (max-width: $tablet-width-only) {
     width: 82px;
-    height: 17px;
+    height: 24px;
   }
 
   @media (max-width: $mobile-width-only) {
@@ -64,7 +66,7 @@
 }
 
 .header__wrapper a {
-  font-family: "Bebas Neue";
+  font-family: "Bebas Neue", sans-serif;
   font-size: 26px;
   line-height: 26px;
   letter-spacing: 0.02em;

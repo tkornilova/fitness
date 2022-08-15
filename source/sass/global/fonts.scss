@@ -1,21 +1,49 @@
-// @font-face {
-//   font-style: normal;
-//   font-weight: 400;
-//   font-family: "Rouble";
-
-//   font-display: swap;
-//   src:
-//     url("../fonts/rouble.woff2") format("woff2"),
-//     url("../fonts/rouble.woff") format("woff");
-// }
+//Roboto Condensed 300
 
 @font-face {
+  font-family: "Roboto Condensed";
+  src: url("../fonts/roboto-condensed-300.woff2") format("woff2"), url("../fonts/roboto-condensed-300.woff") format("woff");
+  font-weight: 300;
   font-style: normal;
-  font-weight: 400;
-  font-family: "";
-
   font-display: swap;
-  src:
-    url("../fonts/.woff2") format("woff2"),
-    url("../fonts/.woff") format("woff");
+}
+
+//Roboto Condensed 400
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../fonts/roboto-condensed-400.woff2") format("woff2"), url("../fonts/roboto-condensed-400.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+//Roboto Condensed 700
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../fonts/roboto-condensed-700.woff2") format("woff2"), url("../fonts/roboto-condensed-700.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+//Bebas Neue 400
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("../fonts/bebas-neue-400.woff2") format("woff2"), url("../fonts/bebas-neue-400.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+//Bebas Neue 700
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("../fonts/bebas-neue-700.woff2") format("woff2"), url("../fonts/bebas-neue-700.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }

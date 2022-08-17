@@ -2,10 +2,6 @@
   width: 100%;
   min-width: 320px;
   background: conic-gradient(from 130.31deg at 16.03% 39.06%, $gradient-red -46.69deg, $gradient-blue 32.24deg, $gradient-red 313.31deg, $gradient-blue 392.24deg);
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
   margin: 0 auto;
 }
 
@@ -150,6 +146,7 @@
   line-height: 14px;
   display: flex;
   align-items: center;
+  justify-content: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   padding: 18px 53px;
@@ -160,7 +157,6 @@
   color: $white;
   box-sizing: border-box;
   transition: 1s;
-  text-align: center;
 
   @media (max-width: $tablet-width-only) {
     width: 55%;

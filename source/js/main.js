@@ -1,46 +1,31 @@
-import {iosVhFix} from './utils/ios-vh-fix';
-import {initModals} from './modules/modals/init-modals';
-
-// ---------------------------------
-
 window.addEventListener('DOMContentLoaded', () => {
+  const bodyWrapper = document.querySelector('.wrapper');
+  const videoContainer = document.querySelector('.gym__video');
+  const video = document.querySelector('iframe');
 
-  // Utils
-  // ---------------------------------
+  // Проверка JS
+  if (bodyWrapper.classList.contains('wrapper-no-js')) {
+    bodyWrapper.classList.remove('wrapper-no-js');
+    videoContainer.classList.add('gym__video--nonactive');
+    video.remove();
+  }
 
-  iosVhFix();
+  // Убрать обложку
+  const removeVideoCover = () => {
+    if (videoContainer.classList.contains('gym__video--nonactive')) {
+      videoContainer.classList.remove('gym__video--nonactive');
+      videoContainer.insertAdjacentHTML('afterbegin', '<iframe src="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1" title="YouTube video player" allow="autoplay" frameBorder="0" allowfullscreen></iframe>');
+    }
+  };
 
-  // Modules
-  // ---------------------------------
+  /*
+  const addVideoCover = () => {
+    videoContainer.classList.add('gym__video--nonactive');
+    video.remove();
+  };
 
-  // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
-  // в load следует добавить скрипты, не участвующие в работе первого экрана
-  window.addEventListener('load', () => {
-    initModals();
-  });
+  video.addEventListener('ended', addVideoCover);
+  */
+
+  videoContainer.addEventListener('click', removeVideoCover);
 });
-
-// ---------------------------------
-
-// ❗❗❗ обязательно установите плагины eslint, stylelint, editorconfig в редактор кода.
-
-// привязывайте js не на классы, а на дата атрибуты (data-validate)
-
-// вместо модификаторов .block--active используем утилитарные классы
-// .is-active || .is-open || .is-invalid и прочие (обязателен нейминг в два слова)
-// .select.select--opened ❌ ---> [data-select].is-open ✅
-
-// выносим все в дата атрибуты
-// url до иконок пинов карты, настройки автопрокрутки слайдера, url к json и т.д.
-
-// для адаптивного JS используется matchMedia и addListener
-// const breakpoint = window.matchMedia(`(min-width:1024px)`);
-// const breakpointChecker = () => {
-//   if (breakpoint.matches) {
-//   } else {
-//   }
-// };
-// breakpoint.addListener(breakpointChecker);
-// breakpointChecker();
-
-// используйте .closest(el)

@@ -13,17 +13,232 @@
     <div class="wrapper wrapper-no-js">
 
       <header class="header">
-        <a href="#" aria-label="Переход на главную страницу" tabindex="-100">
-          <svg width="82" height="17" role="img">
-            <use xlink:href="img/sprite.svg#logo"></use>
-          </svg>
-        </a>
-        <div>
-          <a href="tel:+78005555555" aria-label="Позвоните нам">8-800-555-55-55</a>
+        <div class="header__wrapper">
+          <a href="#" aria-label="Переход на главную страницу" tabindex="-100">
+            <svg width="89" height="20" role="img">
+              <use xlink:href="img/sprite.svg#logo"></use>
+            </svg>
+          </a>
+          <div>
+            <a href="tel:+78005555555" aria-label="Позвоните нам">8-800-555-55-55</a>
+          </div>
         </div>
       </header>
       <main>
-
+        <section class="description">
+          <div class="description__wrapper">
+            <div class="description__text">
+              <span>
+                <p>Омск</p>
+              </span>
+              <div class="description__container">
+                <h1>Фитнес центр</h1>
+                <ul class="description__list">
+                  <li>
+                    <p>Тренажёрный зал</p>
+                  </li>
+                  <li>
+                    <p>Групповые занятия</p>
+                  </li>
+                  <li>
+                    <p>Кардио-зона</p>
+                  </li>
+                </ul>
+              </div>
+              <a href="#" aria-label="Купить абонемент">Купить абонемент</a>
+            </div>
+            <div class="description__img">
+              <!-- 1х: 500px; 2x: 1000px -->
+              <img src="img/description-main-1x.jpg" srcset="img/description-main-2x.jpg 2x" alt="Фото тренера" width="500" height="556">
+            </div>
+            <ul class="description__socials">
+              <li>
+                <a href="#" aria-label="Переходите на наш Facebook">FB</a>
+              </li>
+              <li>
+                <a href="#" aria-label="Переходите на наш VK">VK</a>
+              </li>
+              <li>
+                <a href="#" aria-label="Переходите на наш IG">IG</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="gym">
+          <div class="gym__wrapper">
+            <div class="gym__text">
+              <h2>Тренажерный зал</h2>
+              <span><p>Просторный зал площадью 900&nbsp;кв/м</p></span>
+              <p>Supergym – самый большой фитнес центр за&nbsp;Уралом и идеальное место для&nbsp;укрепления тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для&nbsp;всех спортсменов.</p>
+              <p>В&nbsp;зале расположены отдельная зона для Crossfit и &nbsp;ардио-зона с&nbsp;40 тренажерами. Также в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+            </div>
+            <div class="gym__picture">
+              <picture>
+                <!-- 1x: 320px; 2x: 640px -->
+                <source media="(max-width: 767px)" srcset="img/gym-main-mobile-1x.jpg 1x, img/gym-main-mobile-2x.jpg 2x">
+                <!-- 1x: 678px; 2x: 1356px -->
+                <source media="(max-width: 1199px)" srcset="img/gym-main-tablet-1x.jpg 1x, img/gym-main-tablet-2x.jpg 2x">
+                <!-- 1x: 660px; 2x: 1320px -->
+                <img src="img/gym-main-desktop-1x.jpg" srcset="img/gym-main-desktop-2x.jpg 2x" alt="Фотография спортзала" width="660" height="401">
+              </picture>
+              <div class="gym__video" tabindex="1">
+                <iframe src="https://www.youtube.com/embed/9TZXsZItgdw" title="YouTube video player" allow="autoplay" frameBorder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="prices">
+          <div class="prices__wrapper">
+            <h2>Абонементы</h2>
+            <div class="prices__duration">
+              <p class="prices__duration--active" tabindex="1">1 месяц</p>
+              <p tabindex="1">6 месяцев</p>
+              <p tabindex="1">12 месяцев</p>
+            </div>
+            <div class="prices__options">
+              <ul class="prices__list prices__list--active">
+                <li class="prices__item" tabindex="1">
+                  <h3>С тренером</h3>
+                  <p>12 занятий</p>
+                  <div class="prices__container">
+                    <p><span>5000</span>5000</p>
+                    <svg width="30" height="42" role="img">
+                      <use xlink:href="img/sprite.svg#ruble"></use>
+                    </svg>
+                  </div>
+                  <a href="#" aria-label="Купить абонемент" tabindex="1">Купить абонемент</a>
+                </li>
+                <li class="prices__item" tabindex="1">
+                  <h3>Дневной</h3>
+                  <p>С 8:00 до 17:00</p>
+                  <div class="prices__container">
+                    <p><span>1700</span>1700</p>
+                    <svg width="30" height="42" role="img">
+                      <use xlink:href="img/sprite.svg#ruble"></use>
+                    </svg>
+                  </div>
+                  <a href="#" aria-label="Купить абонемент" tabindex="1">Купить абонемент</a>
+                </li>
+                <li class="prices__item" tabindex="1">
+                  <h3>Полный день</h3>
+                  <p>С 8:00 до 22:00</p>
+                  <div class="prices__container">
+                    <p><span>2700</span>2700</p>
+                    <svg width="30" height="42" role="img">
+                      <use xlink:href="img/sprite.svg#ruble"></use>
+                    </svg>
+                  </div>
+                  <a href="#" aria-label="Купить абонемент" tabindex="1">Купить абонемент</a>
+                </li>
+              </ul>
+              <ul class="prices__list">
+                <li class="prices__item" tabindex="1">
+                  <h3>С тренером</h3>
+                  <p>12 занятий</p>
+                  <div class="prices__container">
+                    <p><span>25000</span>25000</p>
+                    <svg width="30" height="42" role="img">
+                      <use xlink:href="img/sprite.svg#ruble"></use>
+                    </svg>
+                  </div>
+                  <a href="#" aria-label="Купить абонемент" tabindex="1">Купить абонемент</a>
+                </li>
+                <li class="prices__item" tabindex="1">
+                  <h3>Дневной</h3>
+                  <p>С 8:00 до 17:00</p>
+                  <div class="prices__container">
+                    <p><span>9000</span>9000</p>
+                    <svg width="30" height="42" role="img">
+                      <use xlink:href="img/sprite.svg#ruble"></use>
+                    </svg>
+                  </div>
+                  <a href="#" aria-label="Купить абонемент" tabindex="1">Купить абонемент</a>
+                </li>
+                <li class="prices__item" tabindex="1">
+                  <h3>Полный день</h3>
+                  <p>С 8:00 до 22:00</p>
+                  <div class="prices__container">
+                    <p><span>15000</span>15000</p>
+                    <svg width="30" height="42" role="img">
+                      <use xlink:href="img/sprite.svg#ruble"></use>
+                    </svg>
+                  </div>
+                  <a href="#" aria-label="Купить абонемент" tabindex="1">Купить абонемент</a>
+                </li>
+              </ul>
+              <ul class="prices__list">
+                <li class="prices__item" tabindex="1">
+                  <h3>С тренером</h3>
+                  <p>12 занятий</p>
+                  <div class="prices__container">
+                    <p><span>50000</span>50000</p>
+                    <svg width="30" height="42" role="img">
+                      <use xlink:href="img/sprite.svg#ruble"></use>
+                    </svg>
+                  </div>
+                  <a href="#" aria-label="Купить абонемент" tabindex="1">Купить абонемент</a>
+                </li>
+                <li class="prices__item" tabindex="1">
+                  <h3>Дневной</h3>
+                  <p>С 8:00 до 17:00</p>
+                  <div class="prices__container">
+                    <p><span>18000</span>18000</p>
+                    <svg width="30" height="42" role="img">
+                      <use xlink:href="img/sprite.svg#ruble"></use>
+                    </svg>
+                  </div>
+                  <a href="#" aria-label="Купить абонемент" tabindex="1">Купить абонемент</a>
+                </li>
+                <li class="prices__item" tabindex="1">
+                  <h3>Полный день</h3>
+                  <p>С 8:00 до 22:00</p>
+                  <div class="prices__container">
+                    <p><span>30000</span>30000</p>
+                    <svg width="30" height="42" role="img">
+                      <use xlink:href="img/sprite.svg#ruble"></use>
+                    </svg>
+                  </div>
+                  <a href="#" aria-label="Купить абонемент" tabindex="1">Купить абонемент</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="advertisement">
+          <div class="advertisement__wrapper">
+            <div class="advertisement__text">
+              <div class="advertisement__topline">
+                <h2>Super games</h2>
+                <div class="advertisement__container">
+                  <div class="advertisement__date">
+                    <p>Дата</p>
+                    <div>
+                      <p>7</p>
+                      <div>
+                        <p>Марта</p>
+                        <p>2019</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="advertisement__time">
+                    <p>Время</p>
+                    <p>12:00</p>
+                  </div>
+                </div>
+              </div>
+              <p>Ежегодные соревнования по CrossFit</p>
+              <a href="#" aria-label="Заполнить заявку">Заполнить заявку</a>
+            </div>
+            <picture class="advertisement__picture">
+              <!-- 1x: 290px; 2x: 580px -->
+              <source media="(max-width: 767px)" srcset="img/advertisement-mobile-1x.jpg 1x, img/advertisement-mobile-2x.jpg 2x">
+              <!-- 1x: 386px; 2x: 772px -->
+              <source media="(max-width: 1199px)" srcset="img/advertisement-tablet-1x.jpg 1x, img/advertisement-tablet-2x.jpg 2x">
+              <!-- 1x: 660px; 2x: 1320px -->
+              <img src="img/advertisement-desktop-1x.jpg" srcset="img/advertisement-desktop-2x.jpg 2x" alt="Фотография спортсмена" width="660" height="550">
+            </picture>
+          </div>
+        </section>
       </main>
 
       <footer class="footer">

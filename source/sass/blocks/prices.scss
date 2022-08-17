@@ -6,7 +6,7 @@
 }
 
 .prices::after {
-  content: url("../img/prices-bg-desktop-1x.png");
+  content: url("../img/prices-bg-desktop.png");
   width: 290px;
   height: auto;
   position: absolute;
@@ -14,7 +14,7 @@
   right: -4px;
 
   @media (max-width: $tablet-width-only) {
-    content: url("../img/prices-bg-tablet-1x.png");
+    content: url("../img/prices-bg-tablet.png");
     bottom: -7.5%;
     right: 57px;
   }

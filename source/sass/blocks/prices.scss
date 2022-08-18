@@ -101,6 +101,7 @@
   margin: 0 46px 0 0;
   cursor: pointer;
   transition: 1s;
+  user-select: none;
 
   @media (max-width: $tablet-width-only) {
     font-size: 18px;
@@ -124,19 +125,19 @@
   transition: 1s;
 }
 
-.prices__duration .prices__duration--active:hover,
-.prices__duration .prices__duration--active:focus,
-.prices__duration .prices__duration--active:active {
+.prices__duration .prices__duration-item--active:hover,
+.prices__duration .prices__duration-item--active:focus,
+.prices__duration .prices__duration-item--active:active {
   transform: none;
 }
 
 
-.prices__duration .prices__duration--active {
+.prices__duration .prices__duration-item--active {
   color: $dark-blue;
   position: relative;
 }
 
-.prices__duration .prices__duration--active::after {
+.prices__duration .prices__duration-item--active::after {
   content: "";
   width: 100%;
   height: 2px;
@@ -210,6 +211,7 @@
   border-image-slice: 1;
   transition: 1s;
   margin-top: -6px;
+  position: relative;
 }
 
 .prices__item h3 {

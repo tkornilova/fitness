@@ -1,3 +1,5 @@
+import '../js/vendor/swiper';
+
 window.addEventListener('DOMContentLoaded', () => {
   const bodyWrapper = document.querySelector('.wrapper');
 
@@ -39,10 +41,10 @@ window.addEventListener('DOMContentLoaded', () => {
       let index = Array.from(durationList).indexOf(duration);
 
       durationList.forEach((item) => {
-        item.classList.remove('prices__duration--active');
+        item.classList.remove('prices__duration-item--active');
       });
 
-      duration.classList.add('prices__duration--active');
+      duration.classList.add('prices__duration-item--active');
 
       priceLists.forEach((list) => {
         list.classList.remove('prices__list--active');
@@ -74,4 +76,32 @@ window.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
+
+  // Swiper 7.4.1
+
+  /* eslint-disable no-new */
+  /* eslint-disable no-undef */
+
+  new Swiper('.swiper', {
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      1200: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
+    },
+  });
+
 });

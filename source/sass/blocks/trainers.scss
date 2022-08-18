@@ -1,0 +1,233 @@
+.trainers {
+  width: 100%;
+  min-width: 320px;
+  text-align: left;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  @media (min-width: $desktop-width) {
+    max-width: 1272px;
+    padding: 120px 0 120px 0;
+  }
+
+  @media (max-width: $tablet-width-only) {
+    text-align: center;
+    max-width: 1199px;
+    padding: 100px 37px 120px 37px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    max-width: 767px;
+    padding: 70px 15px 70px 15px;
+  }
+}
+
+.trainers > h2 {
+  color: $dark-blue;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  margin: 0 58px 48px 58px;
+
+  @media (max-width: $tablet-width-only) {
+    font-size: 42px;
+    line-height: 42px;
+    margin: 0 58px 32px 58px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    font-size: 32px;
+    line-height: 32px;
+    margin: 0 15px 44px 15px;
+  }
+}
+
+.trainers__wrapper {
+  min-width: 294px;
+  width: 100%;
+  color: $white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin: 0 auto;
+
+  @media (max-width: $tablet-width-only) {
+    width: 678px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 226px;
+  }
+}
+
+.trainers__wrapper button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin: 10px 0 0 0;
+  transition: 1s;
+}
+
+.trainers__wrapper button:hover svg,
+.trainers__wrapper button:focus svg,
+.trainers__wrapper button:active svg {
+  stroke: $dark-blue;
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+.trainers__wrapper svg {
+  fill: none;
+  stroke: $arrow;
+
+  @media (max-width: $tablet-width-only) {
+    width: 10px;
+    height: 19px;
+  }
+}
+
+.trainers__container {
+  width: 91%;
+  height: 294px;
+  overflow: hidden;
+
+  @media (max-width: $tablet-width-only) {
+    width: 566px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    height: 274px;
+    width: 226px;
+  }
+}
+
+.trainers__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.trainers__item {
+  width: 22.38%;
+  height: 294px;
+  margin: 0 40px 0 0;
+  position: relative;
+
+  @media (max-width: $tablet-width-only) {
+    width: 47%;
+    margin: 0 30px 0 0;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    margin: 0 20px 0 0;
+  }
+}
+
+.trainers__item:first-child {
+  margin: 0;
+}
+
+.trainers__picture {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.trainers__picture img {
+  width: 260px;
+  height: 294px;
+
+  @media (max-width: $tablet-width-only) {
+    width: 268px;
+    height: 294px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    margin: 0 -11px 0;
+  }
+}
+
+.trainers__picture > h3 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  position: absolute;
+  bottom: 22px;
+  right: 70px;
+
+  @media (max-width: $tablet-width-only) {
+    bottom: 19px;
+    right: 74px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    bottom: 33px;
+    right: 22px;
+  }
+}
+
+.trainers__info {
+  display: none;
+  transition: 1s;
+}
+
+.trainers__item:hover .trainers__info,
+.trainers__item:focus .trainers__info,
+.trainers__item:focus-within .trainers__info,
+.trainers__item:active .trainers__info {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  top: 0;
+  background-color: $dark-blue-89;
+  overflow-y: scroll;
+  padding: 55px 48px 32px 55px;
+  box-sizing: border-box;
+  transition: 1s;
+
+  @media (max-width: $mobile-width-only) {
+    padding: 41px 34px 40px 34px;
+  }
+}
+
+.trainers__info h4 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  margin: 0 0 -4px 0;
+  text-align: center;
+}
+
+.trainers__info span {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: $gray;
+  margin: 0 0 33px 0;
+  text-align: center;
+}
+
+.info__list {
+  text-align: left;
+}
+
+.info__item {
+  list-style-type: disc;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  margin: 0 0 14px 13px;
+}

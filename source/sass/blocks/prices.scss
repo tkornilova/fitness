@@ -276,6 +276,7 @@
   position: absolute;
   bottom: -8px;
   left: -19px;
+  user-select: none;
 
   @media (max-width: $mobile-width-only) {
     font-size: 80px;

@@ -104,4 +104,14 @@ window.addEventListener('DOMContentLoaded', () => {
     },
   });
 
+  new Swiper('.reviews__container', {
+    loop: false,
+    slidesPerView: 1,
+    spaceBetween: 20,
+    navigation: {
+      nextEl: '.reviews__button-next',
+      prevEl: '.reviews__button-prev',
+    },
+  });
+
 });

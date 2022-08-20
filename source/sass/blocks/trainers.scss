@@ -83,7 +83,7 @@
   fill: none;
   stroke: $arrow;
 
-  @media (max-width: $tablet-width-only) {
+  @media (max-width: $mobile-width-only) {
     width: 10px;
     height: 19px;
   }

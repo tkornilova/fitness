@@ -82,11 +82,11 @@ window.addEventListener('DOMContentLoaded', () => {
   /* eslint-disable no-new */
   /* eslint-disable no-undef */
 
-  new Swiper('.swiper', {
+  new Swiper('.trainers__container', {
     loop: true,
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.trainers__button-next',
+      prevEl: '.trainers__button-prev',
     },
     breakpoints: {
       320: {

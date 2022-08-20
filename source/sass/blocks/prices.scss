@@ -207,7 +207,7 @@
 .prices__item:focus,
 .prices__item:active {
   border: 6px solid $red;
-  border-image: linear-gradient(97.05deg, rgba(237, 2, 51, 1) 17.6%, rgba(16, 38, 84, 1) 95.31%);
+  border-image: linear-gradient(97.05deg, $red 17.6%, $dark-blue 95.31%);
   border-image-slice: 1;
   transition: 1s;
   margin-top: -6px;

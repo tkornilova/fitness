@@ -1,0 +1,334 @@
+.contact-us {
+  width: 100%;
+  min-width: 320px;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+  border-top: 2px solid $dark-blue;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  @media (max-width: $tablet-width-only) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.form,
+.contacts {
+  width: 50%;
+
+  @media (max-width: $tablet-width-only) {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.contact-us h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 49px;
+  line-height: 64px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin: 0 0 23px 0;
+  width: 402px;
+
+  @media (max-width: $tablet-width-only) {
+    font-size: 42px;
+    line-height: 42px;
+    width: 100%;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    font-size: 32px;
+    line-height: 32px;
+    margin: 0 0 26px 0;
+  }
+}
+
+.form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  background-color: $dark-blue;
+  color: $white;
+
+  @media (max-width: $tablet-width-only) {
+    justify-content: center;
+  }
+}
+
+.form__wrapper {
+  width: 603px;
+  min-height: 337px;
+  padding: 64px 100px 70px 23px;
+  box-sizing: border-box;
+
+  @media (max-width: $tablet-width-only) {
+    min-height: 324px;
+    width: 95%;
+    padding: 70px 18.5% 70px 15%;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
+    padding: 70px 15px;
+    min-height: 384px;
+  }
+}
+
+.form__wrapper form {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 0 0 27px 0;
+  width: 410px;
+
+  @media (max-width: $tablet-width-only) {
+    width: 100%;
+    margin: 0 0 30px 0;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    flex-direction: column;
+    margin: 0 0 40px 0;
+  }
+}
+
+.form__wrapper label {
+  width: 46%;
+
+  @media (max-width: $tablet-width-only) {
+    width: 44%;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
+  }
+}
+
+.form__wrapper label:first-child {
+  @media (max-width: $mobile-width-only) {
+    margin: 0 0 24px 0;
+  }
+}
+
+.form__wrapper input {
+  width: 100%;
+  outline: none;
+  display: block;
+  border-bottom: 2px solid $form-border;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: inherit;
+  padding: 10px 0 5px;
+  color: $white;
+}
+
+.form__wrapper input::placeholder {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: $white;
+  user-select: none;
+}
+
+.form__wrapper button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 416px;
+  min-height: 52px;
+  background-color: transparent;
+  border: 3px solid $white;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $white;
+  user-select: none;
+  transition: 1s;
+  cursor: pointer;
+  margin: 0 -3px;
+
+  @media (max-width: $tablet-width-only) {
+    width: 101%;
+  }
+}
+
+.form__wrapper button:hover,
+.form__wrapper button:focus,
+.form__wrapper button:active {
+  background-color: $white;
+  border: none;
+  color: $dark-blue;
+  transition: 1s;
+}
+
+.contacts {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  color: $dark-blue;
+
+  @media (max-width: $tablet-width-only) {
+    justify-content: center;
+  }
+}
+
+.contacts__wrapper {
+  width: 603px;
+  min-height: 337px;
+  padding: 64px 20px 49px 119px;
+  box-sizing: border-box;
+
+  @media (max-width: $tablet-width-only) {
+    min-height: 351px;
+    width: 95%;
+    padding: 68px 15% 45px 14.5%;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
+    padding: 70px 15px 20px;
+    min-height: 507px;
+  }
+}
+
+.contacts__wrapper h2 {
+  margin: 0 0 29px 0;
+
+  @media (max-width: $tablet-width-only) {
+    margin: 0 0 34px 0;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    margin: 0 0 34px 0;
+  }
+}
+
+.contacts__list {
+  width: 460px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 0 0 0 5px;
+  position: relative;
+
+  @media (max-width: $tablet-width-only) {
+    width: 114%;
+    margin: 0;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.contacts__list::before {
+  content: "";
+  width: 1px;
+  height: 80%;
+  background-color: $form-border;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 2% auto;
+
+  @media (max-width: $tablet-width-only) {
+    left: -6%;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
+.contacts__item {
+  width: 170px;
+  margin: 0 0 16px 0;
+
+  @media (max-width: $tablet-width-only) {
+    width: 45%;
+    margin: 0 0 20px 0;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
+    margin: 0 0 24px 0;
+  }
+}
+
+.contacts__item:first-child {
+  @media (max-width: $mobile-width-only) {
+    order: 0;
+  }
+}
+
+.contacts__item:nth-child(2) {
+  @media (max-width: $mobile-width-only) {
+    order: 2;
+  }
+}
+
+.contacts__item:nth-child(3) {
+  @media (max-width: $mobile-width-only) {
+    order: 1;
+  }
+}
+
+.contacts__item:nth-child(4) {
+  @media (max-width: $mobile-width-only) {
+    order: 3;
+  }
+}
+
+.contacts__item h3 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  margin: 0 0 2px 0;
+
+  @media (max-width: $tablet-width-only) {
+    font-size: 20px;
+    margin: 0 0 7px 0;
+  }
+}
+
+.contacts__item p,
+.contacts__item a {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0;
+
+  @media (max-width: $tablet-width-only) {
+    font-size: 18px;
+  }
+}
+
+.contacts__item a {
+  cursor: pointer;
+  transition: 1s;
+}
+
+.contacts__item a:hover,
+.contacts__item a:focus,
+.contacts__item a:active {
+  transform: scale(1.1);
+  display: inline-block;
+  vertical-align: baseline;
+  transition: 1s;
+}

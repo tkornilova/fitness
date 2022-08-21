@@ -1,4 +1,5 @@
 import '../js/vendor/swiper';
+import {maskPhone} from '../js/vendor/mask.js';
 
 window.addEventListener('DOMContentLoaded', () => {
   const bodyWrapper = document.querySelector('.wrapper');
@@ -9,11 +10,18 @@ window.addEventListener('DOMContentLoaded', () => {
   const durationList = document.querySelectorAll('.prices__duration p');
   const priceLists = document.querySelectorAll('.prices__options ul');
 
+  const phoneInput = document.querySelector('.form__phone input');
+
   // Проверка JS
   if (bodyWrapper.classList.contains('wrapper-no-js')) {
     bodyWrapper.classList.remove('wrapper-no-js');
+
     videoContainer.classList.add('gym__video--nonactive');
     video.remove();
+
+    phoneInput.setAttribute('minlength', '18');
+    phoneInput.setAttribute('maxlength', '18');
+    phoneInput.setAttribute('pattern', '.{18,}');
   }
 
   // Убрать обложку
@@ -113,5 +121,8 @@ window.addEventListener('DOMContentLoaded', () => {
       prevEl: '.reviews__button-prev',
     },
   });
+
+  // Mask
+  maskPhone('.form__phone input');
 
 });

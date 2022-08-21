@@ -6,7 +6,7 @@
 
   @media (min-width: $desktop-width) {
     max-width: 1160px;
-    padding: 0 0 117px 0;
+    padding: 0 0 121px 0;
   }
 
   @media (max-width: $tablet-width-only) {
@@ -83,6 +83,11 @@
 
 .reviews__wrapper button:disabled svg {
   stroke: $light-gray;
+  transform: none;
+}
+
+.reviews__wrapper button:disabled {
+  cursor: not-allowed;
 }
 
 .reviews__wrapper svg {

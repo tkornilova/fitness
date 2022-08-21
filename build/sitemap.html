@@ -504,14 +504,14 @@
               <div class="promotions__promo1 promo">
                 <div>
                   <h3>Месяц бесплатно</h3>
-                  <p>Приведи друга, получи абонемент в подарок</p>
+                  <p>Приведи друга, получи абонемент в&nbsp;подарок</p>
                 </div>
                 <a href="#" aria-label="Узнать про акцию">Подробнее</a>
               </div>
               <div class="promotions__promo2 promo">
                 <div>
                   <h3>Скидка 20%</h3>
-                  <p>Корпоративный фитнес с командой</p>
+                  <p>Корпоративный фитнес с&nbsp;командой</p>
                 </div>
                 <a href="#" aria-label="Узнать про акцию">Подробнее</a>
               </div>
@@ -558,10 +558,107 @@
             </button>
           </div>
         </section>
+        <section class="contact-us">
+          <div class="contact-us__form form">
+            <div class="form__wrapper">
+              <h2>Бесплатное занятие</h2>
+              <form method="post" action="https://echo.htmlacademy.ru">
+                <label class="form__name">
+                  <input type="text" name="name" placeholder="Имя" minlength="1" required>
+                </label>
+                <label class="form__phone">
+                  <input type="tel" name="phone" placeholder="Телефон" minlength="10" maxlength="10" pattern="^[0-9]{10}$" required title="Введите 10 цифр" required>
+                </label>
+              </form>
+              <button aria-label="Отправить форму">Отправить</button>
+            </div>
+          </div>
+
+          <div class="contact-us__contacts contacts">
+            <div class="contacts__wrapper">
+              <h2>Контакты</h2>
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <h3>Адрес:</h3>
+                  <p>г. Омск, ул. 60 лет Октября, 7</p>
+                </li>
+                <li class="contacts__item">
+                  <h3>Телефон:</h3>
+                  <a href="tel:+78005555555" aria-label="Позвоните нам">8-800-555-55-55</a>
+                </li>
+                <li class="contacts__item">
+                  <h3>График работы:</h3>
+                  <p>Пн-Вс: с 8:00 до 22:00</p>
+                </li>
+                <li class="contacts__item">
+                  <h3>Email:</h3>
+                  <a href="mmailto:omsk@supergym.ru" aria-label="Напишите нам">omsk@supergym.ru</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
       </main>
 
       <footer class="footer">
+        <h2 class="visually-hidden">Навигация</h2>
+        <div class="footer__wrapper">
+          <a href="#" aria-label="Переход на главную страницу" tabindex="-100">
+            <svg width="89" height="20" role="img">
+              <use xlink:href="img/sprite.svg#logo"></use>
+            </svg>
+          </a>
+          <div class="footer__navigation navigation">
+            <div class="navigation__list">
+              <div class="navigation__item" tabindex="-100">
+                <a href="#" aria-label="Переход на главную страницу" tabindex="-100">
+                  <svg width="89" height="20" role="img">
+                    <use xlink:href="img/sprite.svg#logo"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="navigation__item item">
+                <a href="#" aria-label="Перейти на страницу Услуги">Услуги</a>
+              </div>
+              <div class="navigation__item item">
+                <a href="#" aria-label="Перейти на страницу Абонементы">Абонементы</a>
+              </div>
+              <div class="navigation__item item">
+                <a href="#" aria-label="Перейти на страницу Акции">Акции</a>
+              </div>
+              <div class="navigation__item item">
+                <a href="#" aria-label="Перейти на страницу Тренеры">Тренеры</a>
+              </div>
+              <div class="navigation__item item">
+                <a href="#" aria-label="Перейти на страницу Расписание">Расписание</a>
+              </div>
+            </div>
 
+          </div>
+          <ul class="footer__socials socials">
+            <li class="socials__item">
+              <a href="#" aria-label="Перейти на наш VK">
+                <svg width="25" height="25" role="img">
+                  <use xlink:href="img/sprite.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="#" aria-label="Перейти на наш OK">
+                <svg width="25" height="25" role="img">
+                  <use xlink:href="img/sprite.svg#ok"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="#" aria-label="Перейти на наш Reddit">
+                <svg width="25" height="25" role="img">
+                  <use xlink:href="img/sprite.svg#reddit"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </footer>
     </div>
     <script src="js/vendor.min.js"></script>

@@ -831,11 +831,11 @@ a {
 .gym__text > span {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 150%;
   color: #102654;
   letter-spacing: 0.03em;
-  margin: 0 0 37px 0;
+  margin: 0 0 41px 0;
   width: 100%;
 }
 
@@ -883,12 +883,16 @@ a {
   left: 0;
   right: 0;
   background-size: cover;
+  background-color: rgba(120, 120, 120, 0.2);
   z-index: 100;
 }
 
-.gym__video.gym__video--nonactive:hover,
-.gym__video.gym__video--nonactive:focus,
-.gym__video.gym__video--nonactive:active {
+.gym__video.gym__video--nonactive:hover button,
+.gym__video.gym__video--nonactive:focus button,
+.gym__video.gym__video--nonactive:active button,
+.gym__video.gym__video--nonactive button:hover,
+.gym__video.gym__video--nonactive button:focus,
+.gym__video.gym__video--nonactive button:active {
   cursor: pointer;
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
@@ -896,6 +900,22 @@ a {
   -webkit-transition: 1s;
   -o-transition: 1s;
   transition: 1s;
+}
+
+.gym__video button {
+  display: none;
+  width: 100px;
+  height: 100px;
+  border: none;
+  background-color: transparent;
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  cursor: pointer;
 }
 
 .gym__video iframe {
@@ -1470,7 +1490,7 @@ a {
   font-size: 49px;
   line-height: 49px;
   letter-spacing: 0.03em;
-  margin: 0 58px 48px 58px;
+  margin: 0 58px 50px 58px;
 }
 
 .trainers__wrapper {
@@ -1515,6 +1535,17 @@ a {
   -webkit-transition: 1s;
   -o-transition: 1s;
   transition: 1s;
+}
+
+.trainers__wrapper button:disabled svg {
+  stroke: rgba(120, 120, 120, 0.2);
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+}
+
+.trainers__wrapper button:disabled {
+  cursor: not-allowed;
 }
 
 .trainers__wrapper svg {
@@ -1580,10 +1611,7 @@ a {
   transition: 1s;
 }
 
-.trainers__item:hover .trainers__info,
-.trainers__item:focus .trainers__info,
-.trainers__item:focus-within .trainers__info,
-.trainers__item:active .trainers__info {
+.trainers__item:hover .trainers__info {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1609,6 +1637,12 @@ a {
   -webkit-transition: 1s;
   -o-transition: 1s;
   transition: 1s;
+}
+
+.trainers__item:focus .trainers__info,
+.trainers__item:focus-within .trainers__info,
+.trainers__item:active .trainers__info {
+  display: none;
 }
 
 .trainers__info h4 {
@@ -1659,7 +1693,7 @@ a {
   line-height: 49px;
   letter-spacing: 0.03em;
   text-align: center;
-  margin: 0 20px 43px;
+  margin: 0 20px 39px;
   color: #102654;
 }
 
@@ -1707,7 +1741,7 @@ a {
   -ms-flex-pack: start;
   justify-content: flex-start;
   padding: 50px 0 0;
-  margin: 0 0 77px;
+  margin: 0 0 79px;
   border-top: 2px solid rgba(209, 10, 66, 0.2);
 }
 
@@ -1722,16 +1756,10 @@ a {
   margin: 0 0 0 24px;
 }
 
-.advantages__left p {
-  font-family: "Roboto Condensed", sans-serif;
-  font-weight: 700;
-  font-size: 71px;
-  line-height: 150%;
-  background: -o-linear-gradient(322.39deg, #ed0233 0%, #103aae 45.58%);
-  background: linear-gradient(127.61deg, #ed0233 0%, #103aae 45.58%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+.advantages__left img {
+  display: inline-block;
+  vertical-align: baseline;
+  margin: 29px 0 0 0;
 }
 
 .advantages__left span {
@@ -1741,8 +1769,8 @@ a {
   line-height: 150%;
   color: #103aae;
   position: absolute;
-  bottom: 3px;
-  left: 0;
+  bottom: -20px;
+  left: -2px;
 }
 
 .advantages__right {
@@ -1759,7 +1787,7 @@ a {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  margin: 19px 0 0 30px;
+  margin: 22px 0 0 32px;
 }
 
 .advantages__right p {
@@ -2176,7 +2204,7 @@ a {
   flex-wrap: wrap;
   color: white;
   padding: 62px 63px 64px 63px;
-  margin: 0 20px 0 0;
+  margin: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -2270,7 +2298,7 @@ a {
   box-sizing: border-box;
 }
 
-.form__wrapper form {
+.form__wrapper form div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2303,6 +2331,20 @@ a {
   background-color: inherit;
   padding: 10px 0 5px;
   color: white;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+
+.form__wrapper input:hover,
+.form__wrapper input:focus,
+.form__wrapper input:active {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
 }
 
 .form__wrapper input::-webkit-input-placeholder {
@@ -2829,7 +2871,7 @@ a {
     width: 84%;
     text-align: center;
     font-size: 17px;
-    margin: 0 auto 39px auto;
+    margin: 0 auto 40px auto;
   }
 
   .gym__text > p:last-of-type {
@@ -2857,6 +2899,11 @@ a {
     background-image: url("../img/video-bg-tablet-1x.jpg");
   }
 
+  .gym__video button {
+    width: 27.4%;
+    height: 43.7%;
+  }
+
   .prices::after {
     content: url("../img/prices-bg-tablet.png");
     bottom: -7.5%;
@@ -2872,7 +2919,7 @@ a {
   .prices__wrapper h2 {
     font-size: 42px;
     line-height: 42px;
-    margin: 0 0 26px 0;
+    margin: 0 0 28px 0;
   }
 
   .prices__duration {
@@ -2907,6 +2954,10 @@ a {
     width: 75%;
   }
 
+  .advertisement {
+    margin: -2px 0 0;
+  }
+
   .advertisement__wrapper {
     max-width: 1199px;
     margin: 0 43px;
@@ -2914,7 +2965,7 @@ a {
 
   .advertisement__text {
     min-width: 292px;
-    padding: 50px 45px 45px;
+    padding: 46px 45px 45px;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -2965,13 +3016,13 @@ a {
   .trainers {
     text-align: center;
     max-width: 1199px;
-    padding: 100px 37px 107px 37px;
+    padding: 100px 37px 101px 37px;
   }
 
   .trainers > h2 {
     font-size: 42px;
     line-height: 42px;
-    margin: 0 58px 32px 58px;
+    margin: 0 58px 37px 58px;
   }
 
   .trainers__wrapper {
@@ -2993,8 +3044,42 @@ a {
   }
 
   .trainers__picture > h3 {
-    bottom: 19px;
-    right: 74px;
+    bottom: 21px;
+    right: 77px;
+  }
+
+  .trainers__item:hover .trainers__info {
+    display: none;
+  }
+
+  .trainers__item:focus .trainers__info,
+  .trainers__item:focus-within .trainers__info,
+  .trainers__item:active .trainers__info {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    top: 0;
+    background-color: rgba(16, 38, 84, 0.89);
+    overflow-y: scroll;
+    padding: 55px 48px 32px 55px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
   }
 
   .advantages {
@@ -3004,6 +3089,7 @@ a {
   .advantages h2 {
     font-size: 42px;
     line-height: 42px;
+    margin: 0 20px 45px;
   }
 
   .advantages__wrapper {
@@ -3026,12 +3112,14 @@ a {
     margin: -17px 0 0 8px;
   }
 
-  .advantages__left p {
-    font-size: 58px;
+  .advantages__left img {
+    height: 40px;
+    width: auto;
+    margin: 23px 10px 0 0;
   }
 
   .advantages__left span {
-    bottom: 0;
+    bottom: -19px;
     left: -2px;
   }
 
@@ -3174,6 +3262,7 @@ a {
     font-size: 42px;
     line-height: 42px;
     width: 100%;
+    margin: 0 0 26px 0;
   }
 
   .form {
@@ -3185,10 +3274,10 @@ a {
   .form__wrapper {
     min-height: 324px;
     width: 95%;
-    padding: 70px 18.5% 70px 15%;
+    padding: 69px 18.5% 70px 15%;
   }
 
-  .form__wrapper form {
+  .form__wrapper form div {
     width: 100%;
     margin: 0 0 30px 0;
   }
@@ -3210,7 +3299,7 @@ a {
   .contacts__wrapper {
     min-height: 351px;
     width: 95%;
-    padding: 68px 15% 45px 14.5%;
+    padding: 70px 15% 45px 14.5%;
   }
 
   .contacts__wrapper h2 {
@@ -3343,7 +3432,6 @@ a {
   }
 
   .gym__text > span {
-    font-size: 17px;
     text-align: left;
     margin: 0 0 25px 0;
   }
@@ -3387,7 +3475,7 @@ a {
   .prices__wrapper h2 {
     font-size: 32px;
     line-height: 32px;
-    margin: 0 0 20px 0;
+    margin: 0 0 22px 0;
   }
 
   .prices__duration {
@@ -3461,7 +3549,7 @@ a {
   .advertisement__text {
     min-width: 280px;
     width: 90%;
-    padding: 50px 45px 50px;
+    padding: 53px 45px 50px;
   }
 
   .advertisement__container {
@@ -3469,7 +3557,7 @@ a {
   }
 
   .advertisement__text > p {
-    margin: 0 0 16%;
+    margin: 0 0 15%;
   }
 
   .advertisement__picture {
@@ -3503,6 +3591,7 @@ a {
   }
 
   .trainers__item {
+    width: 100%;
     margin: 0 20px 0 0;
   }
 
@@ -3515,7 +3604,6 @@ a {
     right: 22px;
   }
 
-  .trainers__item:hover .trainers__info,
   .trainers__item:focus .trainers__info,
   .trainers__item:focus-within .trainers__info,
   .trainers__item:active .trainers__info {
@@ -3562,7 +3650,11 @@ a {
 
   .advantages__left {
     width: 85%;
-    margin: 0 0 8px;
+    margin: 0 0 25px;
+  }
+
+  .advantages__left img {
+    margin: 23px 0 0 0;
   }
 
   .advantages__right {
@@ -3713,7 +3805,6 @@ a {
   .contact-us h2 {
     font-size: 32px;
     line-height: 32px;
-    margin: 0 0 26px 0;
   }
 
   .form__wrapper {
@@ -3722,7 +3813,7 @@ a {
     min-height: 384px;
   }
 
-  .form__wrapper form {
+  .form__wrapper form div {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;

@@ -13,7 +13,7 @@
   @media (max-width: $tablet-width-only) {
     text-align: center;
     max-width: 1199px;
-    padding: 100px 37px 107px 37px;
+    padding: 100px 37px 101px 37px;
   }
 
   @media (max-width: $mobile-width-only) {
@@ -28,12 +28,12 @@
   font-size: 49px;
   line-height: 49px;
   letter-spacing: 0.03em;
-  margin: 0 58px 48px 58px;
+  margin: 0 58px 50px 58px;
 
   @media (max-width: $tablet-width-only) {
     font-size: 42px;
     line-height: 42px;
-    margin: 0 58px 32px 58px;
+    margin: 0 58px 37px 58px;
   }
 
   @media (max-width: $mobile-width-only) {
@@ -77,6 +77,15 @@
   stroke: $dark-blue;
   transform: scale(1.1);
   transition: 1s;
+}
+
+.trainers__wrapper button:disabled svg {
+  stroke: $light-gray;
+  transform: none;
+}
+
+.trainers__wrapper button:disabled {
+  cursor: not-allowed;
 }
 
 .trainers__wrapper svg {
@@ -124,6 +133,7 @@
   }
 
   @media (max-width: $mobile-width-only) {
+    width: 100%;
     margin: 0 20px 0 0;
   }
 }
@@ -158,8 +168,8 @@
   right: 70px;
 
   @media (max-width: $tablet-width-only) {
-    bottom: 19px;
-    right: 74px;
+    bottom: 21px;
+    right: 77px;
   }
 
   @media (max-width: $mobile-width-only) {
@@ -173,10 +183,7 @@
   transition: 1s;
 }
 
-.trainers__item:hover .trainers__info,
-.trainers__item:focus .trainers__info,
-.trainers__item:focus-within .trainers__info,
-.trainers__item:active .trainers__info {
+.trainers__item:hover .trainers__info {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -190,6 +197,32 @@
   padding: 55px 48px 32px 55px;
   box-sizing: border-box;
   transition: 1s;
+
+  @media (max-width: $tablet-width-only) {
+    display: none;
+  }
+}
+
+.trainers__item:focus .trainers__info,
+.trainers__item:focus-within .trainers__info,
+.trainers__item:active .trainers__info {
+  display: none;
+
+  @media (max-width: $tablet-width-only) {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    top: 0;
+    background-color: $dark-blue-89;
+    overflow-y: scroll;
+    padding: 55px 48px 32px 55px;
+    box-sizing: border-box;
+    transition: 1s;
+  }
 
   @media (max-width: $mobile-width-only) {
     padding: 41px 34px 40px 34px;

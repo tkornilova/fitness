@@ -2,6 +2,10 @@
   width: 100%;
   min-width: 320px;
   margin: 16px 0 0;
+
+  @media (max-width: $tablet-width-only) {
+    margin: -2px 0 0;
+  }
 }
 
 .advertisement__wrapper {
@@ -44,14 +48,14 @@
 
   @media (max-width: $tablet-width-only) {
     min-width: 292px;
-    padding: 50px 45px 45px;
+    padding: 46px 45px 45px;
     justify-content: center;
   }
 
   @media (max-width: $mobile-width-only) {
     min-width: 280px;
     width: 90%;
-    padding: 50px 45px 50px;
+    padding: 53px 45px 50px;
   }
 }
 
@@ -186,7 +190,7 @@
   }
 
   @media (max-width: $mobile-width-only) {
-    margin: 0 0 16%;
+    margin: 0 0 15%;
   }
 }
 

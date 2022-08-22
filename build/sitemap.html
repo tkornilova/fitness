@@ -80,6 +80,10 @@
                 <img src="img/gym-main-desktop-1x.jpg" srcset="img/gym-main-desktop-2x.jpg 2x" alt="Фотография спортзала" width="660" height="401">
               </picture>
               <div class="gym__video" tabindex="0">
+                <button aria-label="Запустить видео" type="button">
+                  <!-- 1х: 100px; 2x: 200px -->
+                  <img src="img/video-button-1x.png" alt="Кнопка запуска видео" width="100" height="100" srcset="img/video-button-2x.png 2x">
+                </button>
                 <iframe src="https://www.youtube.com/embed/9TZXsZItgdw" title="YouTube video player" allow="autoplay" allowfullscreen></iframe>
               </div>
             </div>
@@ -240,7 +244,7 @@
         <section class="trainers">
           <h2>Тренеры</h2>
           <div class="trainers__wrapper">
-            <button class="trainers__button-prev swiper-button-prev" aria-label="Назад">
+            <button class="trainers__button-prev swiper-button-prev" type="button" aria-label="Назад" disabled>
               <svg width="16" height="32" role="img">
                 <use xlink:href="img/sprite.svg#arrow-prev"></use>
               </svg>
@@ -250,6 +254,7 @@
                 <li class="trainers__item swiper-slide" tabindex="0">
                   <div class="trainers__picture">
                     <h3>Анна Павлова</h3>
+                    <!-- 1х: 260px; 2x: 520px -->
                     <img src="img/trainers-photo1-desktop-1x.jpg" srcset="img/trainers-photo1-desktop-2x.jpg 2x" alt="Фотография тренера" width="260" height="294">
                   </div>
                   <div class="trainers__info info">
@@ -271,6 +276,7 @@
                 <li class="trainers__item swiper-slide" tabindex="0">
                   <div class="trainers__picture">
                     <h3>Алексей Лавров</h3>
+                    <!-- 1х: 260px; 2x: 520px -->
                     <img src="img/trainers-photo2-desktop-1x.jpg" srcset="img/trainers-photo2-desktop-2x.jpg 2x" alt="Фотография тренера" width="260" height="294">
                   </div>
                   <div class="trainers__info info">
@@ -292,6 +298,7 @@
                 <li class="trainers__item swiper-slide" tabindex="0">
                   <div class="trainers__picture">
                     <h3>Александр Пашков</h3>
+                    <!-- 1х: 260px; 2x: 520px -->
                     <img src="img/trainers-photo3-desktop-1x.jpg" srcset="img/trainers-photo3-desktop-2x.jpg 2x" alt="Фотография тренера" width="260" height="294">
                   </div>
                   <div class="trainers__info info">
@@ -313,6 +320,7 @@
                 <li class="trainers__item swiper-slide" tabindex="0">
                   <div class="trainers__picture">
                     <h3>Мария Кетова</h3>
+                    <!-- 1х: 260px; 2x: 520px -->
                     <img src="img/trainers-photo4-desktop-1x.jpg" srcset="img/trainers-photo4-desktop-2x.jpg 2x" alt="Фотография тренера" width="260" height="294">
                   </div>
                   <div class="trainers__info info">
@@ -334,6 +342,7 @@
                 <li class="trainers__item swiper-slide" tabindex="0">
                   <div class="trainers__picture">
                     <h3>Александр Пашков</h3>
+                    <!-- 1х: 260px; 2x: 520px -->
                     <img src="img/trainers-photo3-desktop-1x.jpg" srcset="img/trainers-photo3-desktop-2x.jpg 2x" alt="Фотография тренера" width="260" height="294">
                   </div>
                   <div class="trainers__info info">
@@ -355,6 +364,7 @@
                 <li class="trainers__item swiper-slide" tabindex="0">
                   <div class="trainers__picture">
                     <h3>Александр Пашков</h3>
+                    <!-- 1х: 260px; 2x: 520px -->
                     <img src="img/trainers-photo3-desktop-1x.jpg" srcset="img/trainers-photo3-desktop-2x.jpg 2x" alt="Фотография тренера" width="260" height="294">
                   </div>
                   <div class="trainers__info info">
@@ -376,6 +386,7 @@
                 <li class="trainers__item swiper-slide" tabindex="0">
                   <div class="trainers__picture">
                     <h3>Александр Пашков</h3>
+                    <!-- 1х: 260px; 2x: 520px -->
                     <img src="img/trainers-photo3-desktop-1x.jpg" srcset="img/trainers-photo3-desktop-2x.jpg 2x" alt="Фотография тренера" width="260" height="294">
                   </div>
                   <div class="trainers__info info">
@@ -397,6 +408,7 @@
                 <li class="trainers__item swiper-slide" tabindex="0">
                   <div class="trainers__picture">
                     <h3>Александр Пашков</h3>
+                    <!-- 1х: 260px; 2x: 520px -->
                     <img src="img/trainers-photo3-desktop-1x.jpg" srcset="img/trainers-photo3-desktop-2x.jpg 2x" alt="Фотография тренера" width="260" height="294">
                   </div>
                   <div class="trainers__info info">
@@ -418,7 +430,7 @@
               </ul>
 
             </div>
-            <button class="trainers__button-next swiper-button-next" aria-label="Вперед">
+            <button class="trainers__button-next swiper-button-next" type="button" aria-label="Вперед" disabled>
               <svg width="16" height="32" role="img">
                 <use xlink:href="img/sprite.svg#arrow-next"></use>
               </svg>
@@ -431,7 +443,8 @@
             <ul class="advantages__list">
               <li class="advantages__item">
                 <div class="advantages__left">
-                  <p>900</p>
+                  <!-- 1х: 108px; 2x: 216px -->
+                  <img src="img/advantages-pic1-1x.png" srcset="img/advantages-pic1-2x.png 2x" alt="900" width="108" height="49">
                   <span>кв/м</span>
                 </div>
                 <div class="advantages__right">
@@ -441,7 +454,8 @@
               </li>
               <li class="advantages__item">
                 <div class="advantages__left">
-                  <p>70</p>
+                  <!-- 1х: 72px; 2x: 144px -->
+                  <img src="img/advantages-pic2-1x.png" srcset="img/advantages-pic2-2x.png 2x" alt="70" width="72" height="49">
                   <span>машин</span>
                 </div>
                 <div class="advantages__right">
@@ -458,7 +472,8 @@
             <ul class="advantages__list">
               <li class="advantages__item">
                 <div class="advantages__left">
-                  <p>350</p>
+                  <!-- 1х: 108px; 2x: 216px -->
+                  <img src="img/advantages-pic3-1x.png" srcset="img/advantages-pic3-2x.png 2x" alt="100" width="108" height="49">
                   <span>мест</span>
                 </div>
                 <div class="advantages__right">
@@ -468,7 +483,8 @@
               </li>
               <li class="advantages__item">
                 <div class="advantages__left">
-                  <p>5+</p>
+                  <!-- 1х: 70px; 2x: 140px -->
+                  <img src="img/advantages-pic4-1x.png" srcset="img/advantages-pic4-2x.png 2x" alt="5+" width="70" height="49">
                   <span>лет</span>
                 </div>
                 <div class="advantages__right">
@@ -521,7 +537,7 @@
         <section class="reviews">
           <h2>Отзывы</h2>
           <div class="reviews__wrapper">
-            <button class="reviews__button-prev swiper-button-prev" aria-label="Назад">
+            <button class="reviews__button-prev swiper-button-prev" type="button" aria-label="Назад" disabled>
               <svg width="16" height="32" role="img">
                 <use xlink:href="img/sprite.svg#arrow-prev"></use>
               </svg>
@@ -530,28 +546,31 @@
               <ul class="reviews__list swiper-wrapper">
                 <li class="reviews__item swiper-slide">
                   <div>
-                    <img src="img/reviews-user-1x.jpg" srcset="img/reviews-user-2x.jpg 2x" alt="Фотография пользователя">
+                    <!-- 1х: 80px; 2x: 160px -->
+                    <img src="img/reviews-user-1x.jpg" srcset="img/reviews-user-2x.jpg 2x" alt="Фотография пользователя" width="80" height="80">
                   </div>
                   <h3>Анна Орлова</h3>
                   <p>«Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей»</p>
                 </li>
                 <li class="reviews__item swiper-slide">
                   <div>
-                    <img src="img/reviews-user-1x.jpg" srcset="img/reviews-user-2x.jpg 2x" alt="Фотография пользователя">
+                    <!-- 1х: 80px; 2x: 160px -->
+                    <img src="img/reviews-user-1x.jpg" srcset="img/reviews-user-2x.jpg 2x" alt="Фотография пользователя" width="80" height="80">
                   </div>
                   <h3>Анна Орлова</h3>
                   <p>«Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей»</p>
                 </li>
                 <li class="reviews__item swiper-slide">
                   <div>
-                    <img src="img/reviews-user-1x.jpg" srcset="img/reviews-user-2x.jpg 2x" alt="Фотография пользователя">
+                    <!-- 1х: 80px; 2x: 160px -->
+                    <img src="img/reviews-user-1x.jpg" srcset="img/reviews-user-2x.jpg 2x" alt="Фотография пользователя" width="80" height="80">
                   </div>
                   <h3>Анна Орлова</h3>
                   <p>«Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей»</p>
                 </li>
               </ul>
             </div>
-            <button class="reviews__button-next swiper-button-next" aria-label="Вперед">
+            <button class="reviews__button-next swiper-button-next" type="button" aria-label="Вперед" disabled>
               <svg width="16" height="32" role="img">
                 <use xlink:href="img/sprite.svg#arrow-next"></use>
               </svg>
@@ -563,14 +582,16 @@
             <div class="form__wrapper">
               <h2>Бесплатное занятие</h2>
               <form method="post" action="https://echo.htmlacademy.ru">
-                <label class="form__name">
-                  <input type="text" name="name" placeholder="Имя" minlength="1" required>
-                </label>
-                <label class="form__phone">
-                  <input type="tel" name="phone" placeholder="Телефон" minlength="10" maxlength="10" pattern="^[0-9]{10}$" required title="Введите 10 цифр" required>
-                </label>
+                <div>
+                  <label class="form__name">
+                    <input type="text" name="name" placeholder="Имя" minlength="1" required>
+                  </label>
+                  <label class="form__phone">
+                    <input type="tel" name="phone" placeholder="Телефон" minlength="10" maxlength="10" pattern="^[0-9]{10}$" title="Введите 10 цифр" required>
+                  </label>
+                </div>
+                <button aria-label="Отправить форму" type="submit">Отправить</button>
               </form>
-              <button aria-label="Отправить форму">Отправить</button>
             </div>
           </div>
 

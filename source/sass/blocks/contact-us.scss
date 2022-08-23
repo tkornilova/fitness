@@ -328,6 +328,8 @@
 }
 
 .contacts__item a {
+  padding: 0 0 5px 0;
+  display: block;
   cursor: pointer;
   transition: 1s;
 }
@@ -336,7 +338,6 @@
 .contacts__item a:focus,
 .contacts__item a:active {
   transform: scale(1.1);
-  display: inline-block;
-  vertical-align: baseline;
+  display: block;
   transition: 1s;
 }

@@ -59,7 +59,7 @@
   }
 
   @media (max-width: $mobile-width-only) {
-    width: 226px;
+    width: 91%;
   }
 }
 
@@ -108,8 +108,10 @@
   }
 
   @media (max-width: $mobile-width-only) {
-    height: 274px;
-    width: 226px;
+    height: 0;
+    padding-top: 93%;
+    width: 77%;
+    position: relative;
   }
 }
 
@@ -119,6 +121,13 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
+
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    height: 100%;
+  }
 }
 
 .trainers__item {
@@ -133,8 +142,8 @@
   }
 
   @media (max-width: $mobile-width-only) {
-    width: 100%;
-    margin: 0 20px 0 0;
+    width: auto;
+    height: 100%;
   }
 }
 
@@ -155,6 +164,9 @@
 
   @media (max-width: $mobile-width-only) {
     margin: 0 -11px 0;
+    width: auto;
+    height: 100%;
+    margin: 0 20px 0 0;
   }
 }
 
